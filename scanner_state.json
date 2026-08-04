@@ -4,7 +4,7 @@
     "short": false
   },
   "ETHUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "SOLUSDT": {
@@ -60,7 +60,7 @@
     "short": false
   },
   "LITUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "LINEAUSDT": {
@@ -84,7 +84,7 @@
     "short": false
   },
   "ENAUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "GMTUSDT": {
@@ -137,7 +137,7 @@
   },
   "PYTHUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "CROUSDT": {
     "long": false,
@@ -165,7 +165,7 @@
   },
   "INITUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "TRACUSDT": {
     "long": false,
@@ -173,7 +173,7 @@
   },
   "CGPTUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "DODOUSDT": {
     "long": false,
