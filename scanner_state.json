@@ -84,7 +84,7 @@
     "short": false
   },
   "ENAUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "GMTUSDT": {
@@ -132,12 +132,12 @@
     "short": false
   },
   "RUNEUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "PYTHUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "CROUSDT": {
     "long": false,
@@ -177,7 +177,7 @@
   },
   "DODOUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "PENGUUSDT": {
     "long": false,
