@@ -184,6 +184,17 @@ def fetch_klines(symbol: str, interval: str, limit: int, exchange_hint: str | No
     raise RuntimeError(f"{symbol} no encontrado en Binance/Bitget/MEXC: {last_err}")
 
 
+def _timeframe_to_seconds(tf: str) -> int:
+    """Convierte '1h', '4h', '1d', etc. a segundos."""
+    unit = tf[-1]
+    try:
+        num = int(tf[:-1])
+    except ValueError:
+        return 3600
+    mult = {"m": 60, "h": 3600, "d": 86400, "w": 604800, "M": 2592000}
+    return num * mult.get(unit, 3600)
+
+
 # ── Cálculo del Score de Confluencia (réplica del Pine Script) ────────────────
 def compute_metrics(df: pd.DataFrame, df_htf: pd.DataFrame | None) -> dict:
     close = df["close"]
@@ -207,8 +218,25 @@ def compute_metrics(df: pd.DataFrame, df_htf: pd.DataFrame | None) -> dict:
     momentum_bull = bool(rsi_val > 50 and hist_val > 0)
     momentum_bear = bool(rsi_val < 50 and hist_val < 0)
 
-    avg_vol = volume.rolling(20).mean().iloc[-1]
-    liquidez_ok = bool(volume.iloc[-1] >= avg_vol * config.VOL_MIN_MULT) if not np.isnan(avg_vol) else False
+    # ── Liquidez ──
+    # La última vela suele estar aún en formación (no cerrada), así que su volumen
+    # acumulado hasta ahora es solo una fracción del que tendrá al cerrar. Comparar
+    # ese valor parcial contra el promedio de velas completas casi siempre da "NO",
+    # sin importar qué tan líquido sea el activo. Por eso lo proyectamos según
+    # cuánto tiempo lleva abierta la vela, y comparamos contra el promedio de las
+    # 20 velas anteriores YA CERRADAS (sin incluir la actual en el promedio).
+    interval_sec = _timeframe_to_seconds(config.SCAN_TIMEFRAME)
+    last_open_ms = df["open_time"].iloc[-1]
+    now_ms = time.time() * 1000
+    elapsed_sec = max((now_ms - last_open_ms) / 1000, 0)
+    elapsed_frac = min(max(elapsed_sec / interval_sec, 0.05), 1.0)  # mínimo 5% para no dividir por ~0
+
+    current_vol = volume.iloc[-1]
+    projected_vol = current_vol / elapsed_frac  # volumen estimado si la vela cerrara ahora
+
+    closed_window = volume.iloc[-21:-1]  # 20 velas previas, todas ya cerradas
+    avg_vol = closed_window.mean() if len(closed_window) > 0 else np.nan
+    liquidez_ok = bool(projected_vol >= avg_vol * config.VOL_MIN_MULT) if not np.isnan(avg_vol) else False
 
     atr14 = ind.atr(df, 14)
     atr_pct = ind.percentrank(atr14, 100).iloc[-1]
