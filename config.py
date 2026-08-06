@@ -62,6 +62,12 @@ CHECK_INTERVAL_MINUTES = 5
 KLINES_LIMIT = 300           # velas históricas por request (suficiente para EMA55, ADX14, etc.)
 REQUEST_DELAY_SECONDS = 0.3  # pausa entre símbolos para no saturar la API de Binance
 
+# ── Comandos de Telegram (hilo independiente) ─────────────────────────────────
+# Cada cuántos segundos el hilo de comandos revisa mensajes nuevos en Telegram.
+# Es independiente del ciclo de escaneo: así /add, /remove y /timeframe se
+# procesan casi de inmediato, sin esperar a que termine el scan completo.
+COMMAND_POLL_SECONDS = 60
+
 STATE_FILE = "scanner_state.json"
 EXCHANGE_CACHE_FILE = "exchange_cache.json"
 LOG_FILE = "scanner.log"

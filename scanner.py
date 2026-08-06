@@ -15,6 +15,7 @@ import argparse
 import json
 import logging
 import sys
+import threading
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -42,6 +43,19 @@ logging.basicConfig(
     ],
 )
 log = logging.getLogger("tier3scanner")
+
+# Lock compartido entre el hilo de comandos y el hilo principal del scan.
+# Evita que ambos lean/escriban runtime_settings.json al mismo tiempo.
+_cmd_lock = threading.Lock()
+
+
+# ── Validador de símbolo (compartido por scan y hilo de comandos) ─────────────
+def _validate_symbol(symbol: str):
+    try:
+        _, exch = fetch_klines(symbol, config.SCAN_TIMEFRAME, 5)
+        return True, exch
+    except Exception:
+        return False, None
 
 
 # ── Estado persistente (para no repetir alertas en cada ciclo) ────────────────
@@ -292,21 +306,35 @@ def format_price(p: float) -> str:
     return f"{p:,.2f}"
 
 
+# ── Hilo independiente: procesa comandos de Telegram sin bloquear el scan ─────
+def _command_processor_loop():
+    """
+    Corre en segundo plano cada COMMAND_POLL_SECONDS (default 60 s).
+    Procesa /add, /remove, /timeframe, /status, /help de forma inmediata,
+    sin necesidad de esperar a que termine el ciclo de scan completo.
+    """
+    log.info("Hilo de comandos iniciado — polling cada %ds", config.COMMAND_POLL_SECONDS)
+    while True:
+        try:
+            with _cmd_lock:
+                bot_commands.process_commands(send_telegram, _validate_symbol)
+        except Exception as e:
+            log.error("Error en hilo de comandos: %s", e)
+        time.sleep(config.COMMAND_POLL_SECONDS)
+
+
 # ── Un ciclo completo de escaneo ───────────────────────────────────────────────
 def run_scan():
     state = load_state()
     exchange_cache = load_exchange_cache()
     results = []
 
-    # ── Procesar comandos de Telegram pendientes (/add, /remove, /timeframe, etc.) ──
-    def _validate_symbol(symbol):
-        try:
-            _, exch = fetch_klines(symbol, config.SCAN_TIMEFRAME, 5)
-            return True, exch
-        except Exception:
-            return False, None
-
-    settings = bot_commands.process_commands(send_telegram, _validate_symbol)
+    # Procesa comandos de Telegram pendientes (/add, /remove, /timeframe…).
+    # El lock evita conflicto con el hilo de comandos cuando corre en modo loop.
+    # En modo --once (GitHub Actions) el hilo no existe, pero el lock es inocuo.
+    # El mecanismo de offset garantiza que ningún mensaje se procese dos veces.
+    with _cmd_lock:
+        settings = bot_commands.process_commands(send_telegram, _validate_symbol)
     tickers = settings["tickers"]
     scan_tf = settings["timeframe"]
 
@@ -391,13 +419,26 @@ def main():
     args = parser.parse_args()
 
     if args.once:
-        log.info("Tier3 Scanner — ejecución única (--once), %d tickers", len(config.TICKERS))
+        # Cargamos settings antes del log para mostrar el conteo real
+        # (puede diferir de config.TICKERS si el usuario usó /add o /remove via Telegram)
+        _startup_settings = bot_commands.load_settings()
+        log.info(
+            "Tier3 Scanner — ejecución única (--once), %d tickers, timeframe %s",
+            len(_startup_settings["tickers"]),
+            _startup_settings["timeframe"],
+        )
         run_scan()
         return
 
     log.info("Tier3 Scanner iniciado — %d tickers, cada %d min, timeframe %s (HTF %s)",
               len(config.TICKERS), config.CHECK_INTERVAL_MINUTES, config.SCAN_TIMEFRAME,
               config.HTF_TIMEFRAME if config.USE_HTF_FILTER else "desactivado")
+
+    # ── Hilo de comandos: procesa /add, /remove, etc. cada COMMAND_POLL_SECONDS ──
+    cmd_thread = threading.Thread(target=_command_processor_loop, name="cmd-poller", daemon=True)
+    cmd_thread.start()
+    log.info("Hilo de comandos activo — responderá comandos de Telegram en ~%ds", config.COMMAND_POLL_SECONDS)
+
     while True:
         cycle_start = time.time()
         try:
