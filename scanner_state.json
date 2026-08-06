@@ -37,7 +37,7 @@
   },
   "FETUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "NILUSDT": {
     "long": false,
@@ -112,7 +112,7 @@
     "short": false
   },
   "PORTALUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "TRXUSDT": {
@@ -169,7 +169,7 @@
   },
   "TRACUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "CGPTUSDT": {
     "long": false,
