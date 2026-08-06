@@ -9,11 +9,11 @@
   },
   "SOLUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "DOGEUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "WLDUSDT": {
     "long": false,
@@ -29,7 +29,7 @@
   },
   "LINKUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "ONDOUSDT": {
     "long": false,
@@ -45,7 +45,7 @@
   },
   "RIFUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "FILUSDT": {
     "long": false,
@@ -121,7 +121,7 @@
   },
   "QNTUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "CAKEUSDT": {
     "long": false,
@@ -145,7 +145,7 @@
   },
   "VETUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "TAOUSDT": {
     "long": false,
