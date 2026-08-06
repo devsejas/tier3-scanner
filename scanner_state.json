@@ -1,7 +1,7 @@
 {
   "BTCUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "ETHUSDT": {
     "long": false,
@@ -9,7 +9,7 @@
   },
   "SOLUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "DOGEUSDT": {
     "long": false,
@@ -21,7 +21,7 @@
   },
   "JASMYUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "PEPEUSDT": {
     "long": false,
@@ -37,10 +37,10 @@
   },
   "FETUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "NILUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "RIFUSDT": {
@@ -60,7 +60,7 @@
     "short": false
   },
   "LITUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "LINEAUSDT": {
@@ -137,7 +137,7 @@
   },
   "PYTHUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "CROUSDT": {
     "long": false,
@@ -149,7 +149,7 @@
   },
   "TAOUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "NEARUSDT": {
     "long": false,
