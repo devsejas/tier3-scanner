@@ -48,7 +48,8 @@
     "DODOUSDT",
     "PENGUUSDT",
     "AAVEUSDT",
-    "PENDLEUSDT"
+    "PENDLEUSDT",
+    "JCTUSDT"
   ],
   "timeframe": "1h"
 }
