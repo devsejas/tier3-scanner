@@ -17,7 +17,7 @@
   },
   "WLDUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "JASMYUSDT": {
     "long": false,
@@ -45,7 +45,7 @@
   },
   "RIFUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "FILUSDT": {
     "long": false,
@@ -65,7 +65,7 @@
   },
   "LINEAUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "BTTUSDT": {
     "long": false,
@@ -77,7 +77,7 @@
   },
   "SPELLUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "REEFUSDT": {
     "long": false,
@@ -153,7 +153,7 @@
   },
   "NEARUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "RLCUSDT": {
     "long": false,
