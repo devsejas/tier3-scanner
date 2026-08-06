@@ -25,6 +25,7 @@ import requests
 
 import config
 import indicators as ind
+import bot_commands
 
 BINANCE_KLINES_URL = "https://api.binance.com/api/v3/klines"
 BITGET_KLINES_URL = "https://api.bitget.com/api/v2/spot/market/candles"
@@ -196,7 +197,8 @@ def _timeframe_to_seconds(tf: str) -> int:
 
 
 # ── Cálculo del Score de Confluencia (réplica del Pine Script) ────────────────
-def compute_metrics(df: pd.DataFrame, df_htf: pd.DataFrame | None) -> dict:
+def compute_metrics(df: pd.DataFrame, df_htf: pd.DataFrame | None, scan_timeframe: str = None) -> dict:
+    scan_timeframe = scan_timeframe or config.SCAN_TIMEFRAME
     close = df["close"]
     volume = df["volume"]
 
@@ -225,7 +227,7 @@ def compute_metrics(df: pd.DataFrame, df_htf: pd.DataFrame | None) -> dict:
     # sin importar qué tan líquido sea el activo. Por eso lo proyectamos según
     # cuánto tiempo lleva abierta la vela, y comparamos contra el promedio de las
     # 20 velas anteriores YA CERRADAS (sin incluir la actual en el promedio).
-    interval_sec = _timeframe_to_seconds(config.SCAN_TIMEFRAME)
+    interval_sec = _timeframe_to_seconds(scan_timeframe)
     last_open_ms = df["open_time"].iloc[-1]
     now_ms = time.time() * 1000
     elapsed_sec = max((now_ms - last_open_ms) / 1000, 0)
@@ -269,6 +271,8 @@ def compute_metrics(df: pd.DataFrame, df_htf: pd.DataFrame | None) -> dict:
         "score_long": int(score_long),
         "score_short": int(score_short),
         "adx": float(adx_val) if not np.isnan(adx_val) else 0.0,
+        "atr": float(atr14.iloc[-1]) if not np.isnan(atr14.iloc[-1]) else 0.0,
+        "atr_pct": float(atr_pct) if not np.isnan(atr_pct) else 0.0,
         "liquidez_ok": liquidez_ok,
         "vola_ok": vola_ok,
         "htf_bull": htf_bull,
@@ -294,10 +298,22 @@ def run_scan():
     exchange_cache = load_exchange_cache()
     results = []
 
-    for symbol in config.TICKERS:
+    # ── Procesar comandos de Telegram pendientes (/add, /remove, /timeframe, etc.) ──
+    def _validate_symbol(symbol):
+        try:
+            _, exch = fetch_klines(symbol, config.SCAN_TIMEFRAME, 5)
+            return True, exch
+        except Exception:
+            return False, None
+
+    settings = bot_commands.process_commands(send_telegram, _validate_symbol)
+    tickers = settings["tickers"]
+    scan_tf = settings["timeframe"]
+
+    for symbol in tickers:
         try:
             hint = exchange_cache.get(symbol)
-            df_scan, used_exchange = fetch_klines(symbol, config.SCAN_TIMEFRAME, config.KLINES_LIMIT, exchange_hint=hint)
+            df_scan, used_exchange = fetch_klines(symbol, scan_tf, config.KLINES_LIMIT, exchange_hint=hint)
             exchange_cache[symbol] = used_exchange  # recordar para el próximo ciclo (evita reprobar exchanges)
 
             df_htf = None
@@ -305,24 +321,34 @@ def run_scan():
                 # ya sabemos en qué exchange está -> se pide directo ahí, sin recorrer los 3 de nuevo
                 df_htf, _ = fetch_klines(symbol, config.HTF_TIMEFRAME, config.HTF_EMA_LENGTH + 20, exchange_hint=used_exchange)
 
-            m = compute_metrics(df_scan, df_htf)
+            m = compute_metrics(df_scan, df_htf, scan_timeframe=scan_tf)
             results.append({"symbol": symbol, "exchange": used_exchange, **m})
 
             prev = state.get(symbol, {"long": False, "short": False})
+            entry = m["price"]
+            atr = m["atr"]
 
             if m["long_hit"] and not prev.get("long"):
+                sl = entry - atr * config.ATR_SL_MULT
+                tp = entry + atr * config.ATR_SL_MULT * config.TP_RR
                 send_telegram(
-                    f"🟢 <b>LONG {symbol}</b> <i>({used_exchange})</i>\n"
-                    f"Score: {m['score_long']}/100 | ADX: {m['adx']:.1f}\n"
-                    f"Precio: {format_price(m['price'])}"
+                    f"🟢 <b>LONG {symbol}</b> <i>({used_exchange}, {scan_tf})</i>\n"
+                    f"Score: {m['score_long']}/100 | ADX: {m['adx']:.1f} | Volatilidad: {m['atr_pct']:.0f}%\n"
+                    f"Entrada: {format_price(entry)}\n"
+                    f"SL: {format_price(sl)}\n"
+                    f"TP: {format_price(tp)}"
                 )
                 log.info("ALERTA LONG %s [%s] (score=%s)", symbol, used_exchange, m["score_long"])
 
             if m["short_hit"] and not prev.get("short"):
+                sl = entry + atr * config.ATR_SL_MULT
+                tp = entry - atr * config.ATR_SL_MULT * config.TP_RR
                 send_telegram(
-                    f"🔴 <b>SHORT {symbol}</b> <i>({used_exchange})</i>\n"
-                    f"Score: {m['score_short']}/100 | ADX: {m['adx']:.1f}\n"
-                    f"Precio: {format_price(m['price'])}"
+                    f"🔴 <b>SHORT {symbol}</b> <i>({used_exchange}, {scan_tf})</i>\n"
+                    f"Score: {m['score_short']}/100 | ADX: {m['adx']:.1f} | Volatilidad: {m['atr_pct']:.0f}%\n"
+                    f"Entrada: {format_price(entry)}\n"
+                    f"SL: {format_price(sl)}\n"
+                    f"TP: {format_price(tp)}"
                 )
                 log.info("ALERTA SHORT %s [%s] (score=%s)", symbol, used_exchange, m["score_short"])
 

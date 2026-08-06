@@ -52,6 +52,11 @@ ADX_MAX = 48
 VOL_MIN_MULT = 0.8   # volumen actual >= promedio(20) * este múltiplo
 ATR_PCT_MIN = 25     # percentil mínimo de ATR (filtro anti-chop / baja volatilidad)
 
+# ── Gestión de riesgo para el SL/TP que se muestra en la alerta ────────────────
+# Mismo enfoque que tu script de Pine: SL/TP dimensionados por ATR, no por % fijo.
+ATR_SL_MULT = 1.5    # distancia del Stop Loss = ATR * este múltiplo
+TP_RR = 2.5          # Take Profit = distancia del SL * este ratio riesgo/beneficio
+
 # ── Scanner ──────────────────────────────────────────────────────────────────
 CHECK_INTERVAL_MINUTES = 5
 KLINES_LIMIT = 300           # velas históricas por request (suficiente para EMA55, ADX14, etc.)
@@ -60,3 +65,9 @@ REQUEST_DELAY_SECONDS = 0.3  # pausa entre símbolos para no saturar la API de B
 STATE_FILE = "scanner_state.json"
 EXCHANGE_CACHE_FILE = "exchange_cache.json"
 LOG_FILE = "scanner.log"
+
+# ── Configuración controlable desde el bot de Telegram (/add, /remove, /timeframe) ──
+# Estos archivos guardan los cambios hechos vía comandos de Telegram, y tienen
+# prioridad sobre TICKERS y SCAN_TIMEFRAME de arriba una vez que existen.
+SETTINGS_FILE = "runtime_settings.json"
+TELEGRAM_OFFSET_FILE = "telegram_offset.json"
