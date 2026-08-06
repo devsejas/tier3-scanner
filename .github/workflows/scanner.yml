@@ -33,13 +33,47 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt
 
-      - name: Correr un escaneo
+      # ── PASO 1: Procesar comandos de Telegram ANTES del scan (~5 seg) ─────
+      # Así /add, /remove, /timeframe responden de inmediato sin esperar
+      # que terminen los ~4 min del scan completo de 49 tickers.
+      - name: Procesar comandos de Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python process_commands.py
+
+      # Guardar offset y settings tras procesar comandos, ANTES del scan.
+      # Si el scan falla, los comandos ya están registrados.
+      - name: Guardar estado de comandos
+        run: |
+          git config user.name "tier3-scanner-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          for f in runtime_settings.json telegram_offset.json; do
+            [ -f "$f" ] && git add "$f"
+          done
+
+          if git diff --cached --quiet; then
+            echo "Sin comandos nuevos, continuando."
+            exit 0
+          fi
+
+          git commit -m "Comandos de Telegram procesados [skip ci]"
+          BRANCH=$(git rev-parse --abbrev-ref HEAD || echo "main")
+          for i in 1 2 3; do
+            git pull --rebase origin "$BRANCH" && git push origin "$BRANCH" && exit 0
+            sleep $((RANDOM % 5 + 2))
+          done
+
+      # ── PASO 2: Escaneo completo ──────────────────────────────────────────
+      - name: Correr escaneo completo
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python scanner.py --once
 
-      - name: Guardar estado y caché de exchanges
+      # Guardar resultado del scan (estado de señales, caché de exchanges).
+      - name: Guardar estado del scanner
         if: always()
         run: |
           git config user.name "tier3-scanner-bot"
@@ -55,18 +89,14 @@ jobs:
           fi
 
           git commit -m "Actualizar estado del scanner [skip ci]"
-
-          # usar la rama actual en lugar de asumir "main"
           BRANCH=$(git rev-parse --abbrev-ref HEAD || echo "main")
-
           for i in 1 2 3; do
-            if git pull --rebase origin "$BRANCH" 2>&1 && git push origin "$BRANCH" 2>&1; then
+            if git pull --rebase origin "$BRANCH" && git push origin "$BRANCH"; then
               echo "✓ Push exitoso en intento $i"
               exit 0
             fi
             echo "⚠ Intento $i falló, reintentando..."
             sleep $((RANDOM % 10 + 3))
           done
-
           echo "⚠ Advertencia: No se pudo hacer push después de 3 intentos"
           exit 0
