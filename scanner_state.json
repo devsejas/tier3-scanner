@@ -1,7 +1,7 @@
 {
   "BTCUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "ETHUSDT": {
     "long": false,
@@ -40,7 +40,7 @@
     "short": true
   },
   "NILUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "RIFUSDT": {
