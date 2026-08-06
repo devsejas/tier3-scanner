@@ -19,6 +19,9 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -26,7 +29,9 @@ jobs:
           python-version: '3.12'
 
       - name: Instalar dependencias
-        run: pip install -r requirements.txt
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
 
       - name: Correr un escaneo
         env:
@@ -43,7 +48,7 @@ jobs:
           for f in scanner_state.json exchange_cache.json runtime_settings.json telegram_offset.json; do
             [ -f "$f" ] && git add "$f"
           done
-          
+
           if git diff --cached --quiet; then
             echo "No hay cambios en el estado, saltando commit/push"
             exit 0
@@ -51,8 +56,11 @@ jobs:
 
           git commit -m "Actualizar estado del scanner [skip ci]"
 
+          # usar la rama actual en lugar de asumir "main"
+          BRANCH=$(git rev-parse --abbrev-ref HEAD || echo "main")
+
           for i in 1 2 3; do
-            if git pull --rebase origin main 2>&1 && git push origin main 2>&1; then
+            if git pull --rebase origin "$BRANCH" 2>&1 && git push origin "$BRANCH" 2>&1; then
               echo "✓ Push exitoso en intento $i"
               exit 0
             fi
