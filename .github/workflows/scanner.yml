@@ -2,17 +2,12 @@ name: Tier3 Scanner
 
 on:
   schedule:
-    # Cada 5 minutos — el mínimo que permite GitHub Actions. Puede haber
-    # algunos minutos de retraso en horas de alta demanda de GitHub.
     - cron: '*/5 * * * *'
-  workflow_dispatch: {}   # permite correrlo manualmente desde la pestaña "Actions"
+  workflow_dispatch: {}
 
 permissions:
-  contents: write   # necesario para poder guardar el estado/caché de vuelta al repo
+  contents: write
 
-# Evita que dos ejecuciones corran al mismo tiempo (ej: un "Run workflow" manual
-# cruzándose con el cron automático). Las que se crucen esperan en cola en vez
-# de correr en paralelo y pelear por el mismo push.
 concurrency:
   group: tier3-scanner
   cancel-in-progress: false
@@ -20,7 +15,7 @@ concurrency:
 jobs:
   scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 8   # margen extra para la primera corrida (caché de exchange aún "fría")
+    timeout-minutes: 8
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -39,7 +34,8 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python scanner.py --once
 
-      - name: Guardar estado y caché de exchanges (evita alertas repetidas y acelera corridas futuras)
+      - name: Guardar estado y caché de exchanges
+        if: always()
         run: |
           git config user.name "tier3-scanner-bot"
           git config user.email "actions@users.noreply.github.com"
@@ -47,14 +43,22 @@ jobs:
           for f in scanner_state.json exchange_cache.json runtime_settings.json telegram_offset.json; do
             [ -f "$f" ] && git add "$f"
           done
-          git diff --cached --quiet && exit 0
+          
+          if git diff --cached --quiet; then
+            echo "No hay cambios en el estado, saltando commit/push"
+            exit 0
+          fi
 
           git commit -m "Actualizar estado del scanner [skip ci]"
 
-          # Por si acaso el remoto cambió justo antes de este push (aunque el
-          # concurrency group de arriba ya debería evitar esto casi siempre)
           for i in 1 2 3; do
-            git pull --rebase origin main && git push && break
-            echo "Push rechazado, reintentando ($i)..."
+            if git pull --rebase origin main 2>&1 && git push origin main 2>&1; then
+              echo "✓ Push exitoso en intento $i"
+              exit 0
+            fi
+            echo "⚠ Intento $i falló, reintentando..."
             sleep $((RANDOM % 10 + 3))
           done
+
+          echo "⚠ Advertencia: No se pudo hacer push después de 3 intentos"
+          exit 0
