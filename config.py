@@ -63,10 +63,13 @@ KLINES_LIMIT = 300           # velas históricas por request (suficiente para EM
 REQUEST_DELAY_SECONDS = 0.3  # pausa entre símbolos para no saturar la API de Binance
 
 # ── Comandos de Telegram (hilo independiente) ─────────────────────────────────
-# Cada cuántos segundos el hilo de comandos revisa mensajes nuevos en Telegram.
-# Es independiente del ciclo de escaneo: así /add, /remove y /timeframe se
-# procesan casi de inmediato, sin esperar a que termine el scan completo.
 COMMAND_POLL_SECONDS = 60
+
+# ── Heartbeat de Telegram ─────────────────────────────────────────────────────
+# Si es True, envía un mensaje silencioso al inicio de cada ciclo de scan
+# para confirmar que el scanner está vivo y corriendo.
+# Útil para detectar cuando GitHub Actions se retrasa o se detiene.
+HEARTBEAT_ENABLED = True
 
 STATE_FILE = "scanner_state.json"
 EXCHANGE_CACHE_FILE = "exchange_cache.json"

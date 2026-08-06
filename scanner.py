@@ -324,19 +324,42 @@ def _command_processor_loop():
 
 
 # ── Un ciclo completo de escaneo ───────────────────────────────────────────────
+def send_telegram_silent(message: str):
+    """Igual que send_telegram pero sin sonido (disable_notification=True)."""
+    if config.TELEGRAM_BOT_TOKEN in ("TU_TOKEN_AQUI", "") or \
+       config.TELEGRAM_CHAT_ID in ("TU_CHAT_ID_AQUI", ""):
+        return
+    url = TELEGRAM_URL.format(token=config.TELEGRAM_BOT_TOKEN)
+    try:
+        requests.post(url, data={
+            "chat_id": config.TELEGRAM_CHAT_ID,
+            "text": message,
+            "parse_mode": "HTML",
+            "disable_notification": "true",
+        }, timeout=10)
+    except Exception:
+        pass
+
+
 def run_scan():
     state = load_state()
     exchange_cache = load_exchange_cache()
     results = []
 
     # Procesa comandos de Telegram pendientes (/add, /remove, /timeframe…).
-    # El lock evita conflicto con el hilo de comandos cuando corre en modo loop.
-    # En modo --once (GitHub Actions) el hilo no existe, pero el lock es inocuo.
-    # El mecanismo de offset garantiza que ningún mensaje se procese dos veces.
     with _cmd_lock:
         settings = bot_commands.process_commands(send_telegram, _validate_symbol)
     tickers = settings["tickers"]
     scan_tf = settings["timeframe"]
+
+    # Heartbeat: mensaje silencioso al inicio de cada scan (sin sonido).
+    # Permite saber que GitHub Actions está corriendo aunque no haya señales.
+    if config.HEARTBEAT_ENABLED:
+        ts = datetime.now(timezone.utc).astimezone().strftime("%H:%M")
+        send_telegram_silent(
+            f"🔄 <b>Scanner activo</b> — {ts}\n"
+            f"Escaneando {len(tickers)} tickers en {scan_tf}"
+        )
 
     for symbol in tickers:
         try:
