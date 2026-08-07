@@ -29,11 +29,11 @@
   },
   "LINKUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "ONDOUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "FETUSDT": {
     "long": false,
