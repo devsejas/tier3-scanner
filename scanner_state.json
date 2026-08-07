@@ -33,7 +33,7 @@
   },
   "ONDOUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "FETUSDT": {
     "long": false,
@@ -72,7 +72,7 @@
     "short": false
   },
   "FLOWUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "SPELLUSDT": {
@@ -121,7 +121,7 @@
   },
   "QNTUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "CAKEUSDT": {
     "long": false,
@@ -169,7 +169,7 @@
   },
   "TRACUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "CGPTUSDT": {
     "long": false,
