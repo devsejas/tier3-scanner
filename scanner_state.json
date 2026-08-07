@@ -33,7 +33,7 @@
   },
   "ONDOUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "FETUSDT": {
     "long": false,
@@ -57,7 +57,7 @@
   },
   "SEIUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "LITUSDT": {
     "long": false,
@@ -96,7 +96,7 @@
     "short": false
   },
   "OKBUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "KSMUSDT": {
@@ -149,7 +149,7 @@
   },
   "TAOUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "NEARUSDT": {
     "long": false,
@@ -172,7 +172,7 @@
     "short": false
   },
   "CGPTUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "DODOUSDT": {
@@ -192,6 +192,11 @@
     "short": false
   },
   "JCTUSDT": {
+    "long": false,
+    "short": false
+  },
+  "_cycle_count": 1,
+  "AIOZUSDT": {
     "long": false,
     "short": false
   }

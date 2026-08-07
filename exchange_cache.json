@@ -47,5 +47,6 @@
   "PENGUUSDT": "bitget",
   "AAVEUSDT": "bitget",
   "PENDLEUSDT": "bitget",
-  "JCTUSDT": "bitget"
+  "JCTUSDT": "bitget",
+  "AIOZUSDT": "kucoin"
 }
