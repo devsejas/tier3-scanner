@@ -72,7 +72,7 @@
     "short": true
   },
   "FLOWUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "SPELLUSDT": {
