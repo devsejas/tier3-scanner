@@ -57,7 +57,7 @@
   },
   "SEIUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "LITUSDT": {
     "long": false,
@@ -96,7 +96,7 @@
     "short": false
   },
   "OKBUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "KSMUSDT": {
