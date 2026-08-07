@@ -117,7 +117,7 @@
   },
   "TRXUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "QNTUSDT": {
     "long": false,
