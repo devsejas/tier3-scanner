@@ -37,7 +37,7 @@
   },
   "FETUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "NILUSDT": {
     "long": false,
@@ -45,7 +45,7 @@
   },
   "RIFUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "FILUSDT": {
     "long": false,
@@ -121,7 +121,7 @@
   },
   "QNTUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "CAKEUSDT": {
     "long": false,
