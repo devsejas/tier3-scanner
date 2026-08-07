@@ -1,3 +1,203 @@
 {
-  "_cycle_count": 6
+  "_cycle_count": 7,
+  "BTCUSDT": {
+    "long": false,
+    "short": false
+  },
+  "ETHUSDT": {
+    "long": false,
+    "short": false
+  },
+  "SOLUSDT": {
+    "long": false,
+    "short": false
+  },
+  "DOGEUSDT": {
+    "long": false,
+    "short": false
+  },
+  "WLDUSDT": {
+    "long": false,
+    "short": false
+  },
+  "JASMYUSDT": {
+    "long": false,
+    "short": false
+  },
+  "PEPEUSDT": {
+    "long": false,
+    "short": false
+  },
+  "LINKUSDT": {
+    "long": false,
+    "short": false
+  },
+  "ONDOUSDT": {
+    "long": false,
+    "short": false
+  },
+  "FETUSDT": {
+    "long": false,
+    "short": false
+  },
+  "NILUSDT": {
+    "long": false,
+    "short": false
+  },
+  "RIFUSDT": {
+    "long": false,
+    "short": false
+  },
+  "FILUSDT": {
+    "long": false,
+    "short": false
+  },
+  "JTOUSDT": {
+    "long": false,
+    "short": false
+  },
+  "SEIUSDT": {
+    "long": false,
+    "short": false
+  },
+  "LITUSDT": {
+    "long": false,
+    "short": false
+  },
+  "LINEAUSDT": {
+    "long": false,
+    "short": false
+  },
+  "BTTUSDT": {
+    "long": false,
+    "short": false
+  },
+  "FLOWUSDT": {
+    "long": false,
+    "short": false
+  },
+  "SPELLUSDT": {
+    "long": false,
+    "short": false
+  },
+  "REEFUSDT": {
+    "long": false,
+    "short": false
+  },
+  "ENAUSDT": {
+    "long": false,
+    "short": false
+  },
+  "GMTUSDT": {
+    "long": false,
+    "short": false
+  },
+  "BIOUSDT": {
+    "long": false,
+    "short": false
+  },
+  "OKBUSDT": {
+    "long": false,
+    "short": false
+  },
+  "KSMUSDT": {
+    "long": false,
+    "short": true
+  },
+  "ILVUSDT": {
+    "long": false,
+    "short": false
+  },
+  "HBARUSDT": {
+    "long": false,
+    "short": false
+  },
+  "PORTALUSDT": {
+    "long": false,
+    "short": false
+  },
+  "TRXUSDT": {
+    "long": false,
+    "short": false
+  },
+  "QNTUSDT": {
+    "long": false,
+    "short": false
+  },
+  "CAKEUSDT": {
+    "long": false,
+    "short": false
+  },
+  "SUNUSDT": {
+    "long": false,
+    "short": false
+  },
+  "RUNEUSDT": {
+    "long": false,
+    "short": false
+  },
+  "PYTHUSDT": {
+    "long": false,
+    "short": false
+  },
+  "CROUSDT": {
+    "long": false,
+    "short": false
+  },
+  "VETUSDT": {
+    "long": false,
+    "short": false
+  },
+  "TAOUSDT": {
+    "long": false,
+    "short": false
+  },
+  "NEARUSDT": {
+    "long": false,
+    "short": false
+  },
+  "RLCUSDT": {
+    "long": false,
+    "short": false
+  },
+  "ICPUSDT": {
+    "long": false,
+    "short": false
+  },
+  "INITUSDT": {
+    "long": false,
+    "short": false
+  },
+  "TRACUSDT": {
+    "long": false,
+    "short": false
+  },
+  "CGPTUSDT": {
+    "long": false,
+    "short": false
+  },
+  "AIOZUSDT": {
+    "long": false,
+    "short": false
+  },
+  "DODOUSDT": {
+    "long": false,
+    "short": false
+  },
+  "PENGUUSDT": {
+    "long": false,
+    "short": false
+  },
+  "AAVEUSDT": {
+    "long": false,
+    "short": false
+  },
+  "PENDLEUSDT": {
+    "long": false,
+    "short": false
+  },
+  "JCTUSDT": {
+    "long": true,
+    "short": false
+  }
 }
