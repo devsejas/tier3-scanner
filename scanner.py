@@ -30,7 +30,9 @@ import bot_commands
 
 BINANCE_KLINES_URL = "https://api.binance.com/api/v3/klines"
 BITGET_KLINES_URL = "https://api.bitget.com/api/v2/spot/market/candles"
-MEXC_KLINES_URL = "https://api.mexc.com/api/v3/klines"
+MEXC_KLINES_URL   = "https://api.mexc.com/api/v3/klines"
+KUCOIN_KLINES_URL = "https://api.kucoin.com/api/v1/market/candles"
+BYBIT_KLINES_URL  = "https://api.bybit.com/v5/market/kline"
 TELEGRAM_URL = "https://api.telegram.org/bot{token}/sendMessage"
 
 # ── Logging a archivo y consola ────────────────────────────────────────────────
@@ -172,8 +174,89 @@ def fetch_klines_mexc(symbol: str, interval: str, limit: int) -> pd.DataFrame:
     return _normalize_df(rows)
 
 
-FETCHERS = {"binance": fetch_klines_binance, "bitget": fetch_klines_bitget, "mexc": fetch_klines_mexc}
-EXCHANGE_ORDER = ["binance", "bitget", "mexc"]
+# ── KuCoin ──────────────────────────────────────────────────────────────────
+def _to_kucoin_symbol(symbol: str) -> str:
+    """Convierte 'BTCUSDT' -> 'BTC-USDT' para la API de KuCoin."""
+    if symbol.endswith("USDT"):
+        return symbol[:-4] + "-USDT"
+    return symbol
+
+
+def _to_kucoin_interval(tf: str) -> str:
+    mapping = {
+        "1m": "1min",  "3m": "3min",  "5m": "5min", "15m": "15min", "30m": "30min",
+        "1h": "1hour", "2h": "2hour", "4h": "4hour",  "6h": "6hour",  "8h": "8hour",
+        "12h": "12hour", "1d": "1day", "1w": "1week",
+        # 45m no soportado por KuCoin
+    }
+    return mapping.get(tf, "")
+
+
+def fetch_klines_kucoin(symbol: str, interval: str, limit: int) -> pd.DataFrame:
+    kc_interval = _to_kucoin_interval(interval)
+    if not kc_interval:
+        raise ValueError(f"KuCoin no soporta el timeframe: {interval}")
+    kc_symbol = _to_kucoin_symbol(symbol)
+    params = {"symbol": kc_symbol, "type": kc_interval}
+    r = requests.get(KUCOIN_KLINES_URL, params=params, timeout=15)
+    r.raise_for_status()
+    j = r.json()
+    if str(j.get("code")) != "200000":
+        raise ValueError(f"KuCoin: {j.get('msg', 'error desconocido')}")
+    raw = j.get("data", [])
+    if not raw:
+        raise ValueError("Respuesta vacía de KuCoin (símbolo probablemente no existe)")
+    # KuCoin devuelve: [timestamp_seg, open, close, high, low, volume, amount] — orden DESCENDENTE
+    # _normalize_df espera: open_time(ms), open, high, low, close, volume
+    rows = [[int(k[0]) * 1000, k[1], k[3], k[4], k[2], k[5]] for k in raw]
+    rows = rows[::-1]        # de descendente a ascendente
+    rows = rows[-limit:]     # respetar el límite solicitado
+    return _normalize_df(rows)
+
+
+# ── Bybit ───────────────────────────────────────────────────────────────────
+def _to_bybit_interval(tf: str) -> str:
+    mapping = {
+        "1m": "1",  "3m": "3",   "5m": "5",   "15m": "15",  "30m": "30",
+        "45m": "45",  # Bybit soporta 45m nativamente
+        "1h": "60",  "2h": "120", "4h": "240", "6h": "360",  "12h": "720",
+        "1d": "D",  "1w": "W",   "1M": "M",
+    }
+    return mapping.get(tf, "")
+
+
+def fetch_klines_bybit(symbol: str, interval: str, limit: int) -> pd.DataFrame:
+    bybit_interval = _to_bybit_interval(interval)
+    if not bybit_interval:
+        raise ValueError(f"Bybit no soporta el timeframe: {interval}")
+    params = {
+        "category": "spot",
+        "symbol": symbol,
+        "interval": bybit_interval,
+        "limit": min(limit, 1000),
+    }
+    r = requests.get(BYBIT_KLINES_URL, params=params, timeout=15)
+    r.raise_for_status()
+    j = r.json()
+    if j.get("retCode") != 0:
+        raise ValueError(f"Bybit: {j.get('retMsg', 'error desconocido')}")
+    raw = j.get("result", {}).get("list", [])
+    if not raw:
+        raise ValueError("Respuesta vacía de Bybit (símbolo probablemente no existe)")
+    # Bybit: [startTime(ms), open, high, low, close, volume, turnover] — orden DESCENDENTE
+    rows = [[int(k[0]), k[1], k[2], k[3], k[4], k[5]] for k in raw]
+    rows = rows[::-1]  # de descendente a ascendente
+    return _normalize_df(rows)
+
+
+FETCHERS = {
+    "binance": fetch_klines_binance,
+    "bitget":  fetch_klines_bitget,
+    "mexc":    fetch_klines_mexc,
+    "kucoin":  fetch_klines_kucoin,
+    "bybit":   fetch_klines_bybit,
+}
+EXCHANGE_ORDER = ["binance", "bitget", "mexc", "kucoin", "bybit"]
 
 
 def fetch_klines(symbol: str, interval: str, limit: int, exchange_hint: str | None = None, retries: int = 1):
@@ -352,12 +435,16 @@ def run_scan():
     tickers = settings["tickers"]
     scan_tf = settings["timeframe"]
 
-    # Heartbeat: mensaje silencioso al inicio de cada scan (sin sonido).
+    # Heartbeat: mensaje silencioso al inicio (sin sonido).
     # Permite saber que GitHub Actions está corriendo aunque no haya señales.
-    if config.HEARTBEAT_ENABLED:
+    cycle_count = state.get("_cycle_count", 0) + 1
+    state["_cycle_count"] = cycle_count
+    
+    interval = getattr(config, "HEARTBEAT_INTERVAL_CYCLES", 12)
+    if config.HEARTBEAT_ENABLED and (cycle_count % interval) == 1:
         ts = datetime.now(timezone.utc).astimezone().strftime("%H:%M")
         send_telegram_silent(
-            f"🔄 <b>Scanner activo</b> — {ts}\n"
+            f"🔄 <b>Scanner activo</b> — {ts} (Ciclo {cycle_count})\n"
             f"Escaneando {len(tickers)} tickers en {scan_tf}"
         )
 

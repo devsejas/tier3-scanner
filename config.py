@@ -47,7 +47,7 @@ W_BONUS_ADX = 10
 SCORE_MIN = 70
 
 ADX_MIN = 20
-ADX_MAX = 48
+ADX_MAX = 60
 
 VOL_MIN_MULT = 0.8   # volumen actual >= promedio(20) * este múltiplo
 ATR_PCT_MIN = 25     # percentil mínimo de ATR (filtro anti-chop / baja volatilidad)
@@ -63,13 +63,14 @@ KLINES_LIMIT = 300           # velas históricas por request (suficiente para EM
 REQUEST_DELAY_SECONDS = 0.3  # pausa entre símbolos para no saturar la API de Binance
 
 # ── Comandos de Telegram (hilo independiente) ─────────────────────────────────
-COMMAND_POLL_SECONDS = 60
+COMMAND_POLL_SECONDS = 15
 
 # ── Heartbeat de Telegram ─────────────────────────────────────────────────────
 # Si es True, envía un mensaje silencioso al inicio de cada ciclo de scan
 # para confirmar que el scanner está vivo y corriendo.
 # Útil para detectar cuando GitHub Actions se retrasa o se detiene.
 HEARTBEAT_ENABLED = True
+HEARTBEAT_INTERVAL_CYCLES = 12
 
 STATE_FILE = "scanner_state.json"
 EXCHANGE_CACHE_FILE = "exchange_cache.json"

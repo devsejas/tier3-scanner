@@ -21,28 +21,39 @@ import requests
 
 import config
 
-VALID_TIMEFRAMES = ["1m", "3m", "5m", "15m", "30m", "1h", "2h", "4h", "6h", "12h", "1d"]
+VALID_TIMEFRAMES = ["1m", "3m", "5m", "15m", "30m", "45m", "1h", "2h", "4h", "6h", "12h", "1d"]
 GET_UPDATES_URL = "https://api.telegram.org/bot{token}/getUpdates"
 
 
 # ── Configuración en tiempo real (tickers / temporalidad) ─────────────────────
 def load_settings() -> dict:
     path = Path(config.SETTINGS_FILE)
-    if path.exists():
-        try:
-            data = json.loads(path.read_text(encoding="utf-8"))
-            if data.get("tickers") and data.get("timeframe"):
-                return data
-        except Exception:
-            pass
-    # Primera vez -> partir de los valores por defecto de config.py
+    backup_path = Path(config.SETTINGS_FILE + ".bak")
+    
+    for p in [path, backup_path]:
+        if p.exists():
+            try:
+                data = json.loads(p.read_text(encoding="utf-8"))
+                if data.get("tickers") and data.get("timeframe"):
+                    return data
+            except Exception:
+                pass
+                
+    # Fallback -> partir de los valores por defecto de config.py
     settings = {"tickers": list(config.TICKERS), "timeframe": config.SCAN_TIMEFRAME}
     save_settings(settings)
     return settings
 
 
 def save_settings(settings: dict):
-    Path(config.SETTINGS_FILE).write_text(json.dumps(settings, indent=2, ensure_ascii=False), encoding="utf-8")
+    text = json.dumps(settings, indent=2, ensure_ascii=False)
+    path = Path(config.SETTINGS_FILE)
+    if path.exists():
+        try:
+            Path(config.SETTINGS_FILE + ".bak").write_text(path.read_text(encoding="utf-8"), encoding="utf-8")
+        except Exception:
+            pass
+    path.write_text(text, encoding="utf-8")
 
 
 # ── Offset de Telegram (para no reprocesar el mismo mensaje dos veces) ────────
@@ -116,7 +127,8 @@ def process_commands(send_reply_fn, validate_symbol_fn) -> dict:
                 "/remove SYMBOL [SYMBOL2 ...] — quitar tickers\n"
                 "/timeframe 1h — cambiar temporalidad ("
                 + ", ".join(VALID_TIMEFRAMES) + ")\n"
-                "/status — ver configuración actual\n\n"
+                "/status — ver configuración actual\n"
+                "/reset — borrar estado (alertas previas)\n\n"
                 f"⏱ Los cambios se aplican en el próximo ciclo (máx. {config.CHECK_INTERVAL_MINUTES} min)."
             )
 
@@ -186,6 +198,15 @@ def process_commands(send_reply_fn, validate_symbol_fn) -> dict:
                 settings["timeframe"] = args[0]
                 save_settings(settings)
                 send_reply_fn(f"⏱ Temporalidad de escaneo cambiada a {args[0]}")
+
+        elif cmd == "/reset":
+            path = Path(config.STATE_FILE)
+            if path.exists():
+                try:
+                    path.unlink()
+                except Exception:
+                    pass
+            send_reply_fn("♻️ Estado del escáner reseteado. Las alertas previas han sido olvidadas y volverán a sonar si siguen activas.")
 
         else:
             send_reply_fn(f"Comando no reconocido: {cmd}\nEscribe /help para ver la lista completa.")
