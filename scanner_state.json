@@ -37,7 +37,7 @@
   },
   "FETUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "NILUSDT": {
     "long": false,
@@ -195,9 +195,9 @@
     "long": false,
     "short": false
   },
-  "_cycle_count": 5,
+  "_cycle_count": 6,
   "AIOZUSDT": {
     "long": false,
-    "short": false
+    "short": true
   }
 }
