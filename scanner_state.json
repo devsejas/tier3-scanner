@@ -37,7 +37,7 @@
   },
   "FETUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "NILUSDT": {
     "long": false,
@@ -49,7 +49,7 @@
   },
   "FILUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "JTOUSDT": {
     "long": false,
@@ -195,7 +195,7 @@
     "long": false,
     "short": false
   },
-  "_cycle_count": 2,
+  "_cycle_count": 3,
   "AIOZUSDT": {
     "long": false,
     "short": false
