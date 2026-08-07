@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 10,
+  "_cycle_count": 11,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -118,7 +118,7 @@
   },
   "TRXUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "QNTUSDT": {
     "long": false,
@@ -129,11 +129,11 @@
     "short": false
   },
   "SUNUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "RUNEUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "PYTHUSDT": {
@@ -174,7 +174,7 @@
   },
   "CGPTUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "AIOZUSDT": {
     "long": false,
