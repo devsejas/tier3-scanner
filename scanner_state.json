@@ -33,11 +33,11 @@
   },
   "ONDOUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "FETUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "NILUSDT": {
     "long": false,
@@ -57,7 +57,7 @@
   },
   "SEIUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "LITUSDT": {
     "long": false,
