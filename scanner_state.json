@@ -82,7 +82,7 @@
   },
   "REEFUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "ENAUSDT": {
     "long": false,
@@ -165,7 +165,7 @@
     "short": false
   },
   "INITUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "TRACUSDT": {
