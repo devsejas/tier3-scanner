@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 512,
+  "_cycle_count": 513,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -42,7 +42,7 @@
   },
   "NILUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "RIFUSDT": {
     "long": false,
@@ -122,10 +122,10 @@
   },
   "QNTUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "CAKEUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "SUNUSDT": {
@@ -137,7 +137,7 @@
     "short": false
   },
   "PYTHUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "CROUSDT": {
@@ -149,7 +149,7 @@
     "short": false
   },
   "TAOUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "NEARUSDT": {
