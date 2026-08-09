@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 716,
+  "_cycle_count": 717,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -102,7 +102,7 @@
   },
   "KSMUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "ILVUSDT": {
     "long": false,
