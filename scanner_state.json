@@ -1,8 +1,8 @@
 {
-  "_cycle_count": 1064,
+  "_cycle_count": 1065,
   "BTCUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "ETHUSDT": {
     "long": false,
@@ -38,7 +38,7 @@
   },
   "FETUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "NILUSDT": {
     "long": false,
@@ -73,7 +73,7 @@
     "short": false
   },
   "FLOWUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "SPELLUSDT": {
@@ -158,10 +158,10 @@
   },
   "RLCUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "ICPUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "INITUSDT": {
