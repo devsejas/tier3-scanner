@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 898,
+  "_cycle_count": 899,
   "BTCUSDT": {
     "long": true,
     "short": false
@@ -161,7 +161,7 @@
     "short": false
   },
   "ICPUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "INITUSDT": {
@@ -185,7 +185,7 @@
     "short": false
   },
   "PENGUUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "AAVEUSDT": {
