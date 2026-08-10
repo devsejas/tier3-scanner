@@ -1,11 +1,11 @@
 {
-  "_cycle_count": 823,
+  "_cycle_count": 824,
   "BTCUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "ETHUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "SOLUSDT": {
@@ -30,7 +30,7 @@
   },
   "LINKUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "ONDOUSDT": {
     "long": false,
@@ -173,11 +173,11 @@
     "short": false
   },
   "CGPTUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "AIOZUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "DODOUSDT": {
@@ -189,7 +189,7 @@
     "short": false
   },
   "AAVEUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "PENDLEUSDT": {
