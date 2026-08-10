@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 803,
+  "_cycle_count": 804,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -82,7 +82,7 @@
   },
   "REEFUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "ENAUSDT": {
     "long": false,
@@ -117,12 +117,12 @@
     "short": false
   },
   "TRXUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "QNTUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "CAKEUSDT": {
     "long": false,
