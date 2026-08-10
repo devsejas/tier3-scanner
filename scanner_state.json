@@ -1,11 +1,11 @@
 {
-  "_cycle_count": 818,
+  "_cycle_count": 819,
   "BTCUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "ETHUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "SOLUSDT": {
@@ -30,7 +30,7 @@
   },
   "LINKUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "ONDOUSDT": {
     "long": false,
@@ -189,7 +189,7 @@
     "short": false
   },
   "AAVEUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "PENDLEUSDT": {
