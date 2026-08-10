@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 1007,
+  "_cycle_count": 1008,
   "BTCUSDT": {
     "long": false,
     "short": true
@@ -73,7 +73,7 @@
     "short": false
   },
   "FLOWUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "SPELLUSDT": {
@@ -190,11 +190,11 @@
   },
   "AAVEUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "PENDLEUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "JCTUSDT": {
     "long": false,
