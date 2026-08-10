@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 977,
+  "_cycle_count": 978,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -93,7 +93,7 @@
     "short": false
   },
   "BIOUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "OKBUSDT": {
