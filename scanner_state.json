@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 1372,
+  "_cycle_count": 1373,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -122,14 +122,14 @@
   },
   "QNTUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "CAKEUSDT": {
     "long": false,
     "short": false
   },
   "SUNUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "RUNEUSDT": {
