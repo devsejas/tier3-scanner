@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 1253,
+  "_cycle_count": 1254,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -42,7 +42,7 @@
   },
   "NILUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "RIFUSDT": {
     "long": false,
@@ -102,7 +102,7 @@
   },
   "KSMUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "ILVUSDT": {
     "long": false,
@@ -158,7 +158,7 @@
   },
   "RLCUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "ICPUSDT": {
     "long": false,
