@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 1218,
+  "_cycle_count": 1219,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -34,7 +34,7 @@
   },
   "ONDOUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "FETUSDT": {
     "long": false,
@@ -70,7 +70,7 @@
   },
   "BTTUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "FLOWUSDT": {
     "long": false,
@@ -90,7 +90,7 @@
   },
   "GMTUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "BIOUSDT": {
     "long": false,
@@ -154,7 +154,7 @@
   },
   "NEARUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "RLCUSDT": {
     "long": false,
