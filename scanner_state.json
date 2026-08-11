@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 1299,
+  "_cycle_count": 1300,
   "BTCUSDT": {
     "long": false,
     "short": true
@@ -114,7 +114,7 @@
   },
   "PORTALUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "TRXUSDT": {
     "long": true,
@@ -125,11 +125,11 @@
     "short": true
   },
   "CAKEUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "SUNUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "RUNEUSDT": {
