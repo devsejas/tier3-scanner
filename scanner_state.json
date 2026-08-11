@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 1109,
+  "_cycle_count": 1110,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -78,7 +78,7 @@
   },
   "SPELLUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "REEFUSDT": {
     "long": false,
