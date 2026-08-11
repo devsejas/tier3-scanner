@@ -1,8 +1,8 @@
 {
-  "_cycle_count": 1183,
+  "_cycle_count": 1184,
   "BTCUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "ETHUSDT": {
     "long": false,
@@ -50,7 +50,7 @@
   },
   "FILUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "JTOUSDT": {
     "long": false,
@@ -102,7 +102,7 @@
   },
   "KSMUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "ILVUSDT": {
     "long": false,
@@ -113,7 +113,7 @@
     "short": false
   },
   "PORTALUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "TRXUSDT": {
