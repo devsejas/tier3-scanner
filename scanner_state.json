@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 1464,
+  "_cycle_count": 1465,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -114,7 +114,7 @@
   },
   "PORTALUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "TRXUSDT": {
     "long": false,
@@ -166,7 +166,7 @@
   },
   "INITUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "TRACUSDT": {
     "long": false,
