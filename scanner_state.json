@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 1413,
+  "_cycle_count": 1414,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -73,7 +73,7 @@
     "short": false
   },
   "FLOWUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "SPELLUSDT": {
@@ -82,10 +82,10 @@
   },
   "REEFUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "ENAUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "GMTUSDT": {
@@ -125,7 +125,7 @@
     "short": false
   },
   "CAKEUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "SUNUSDT": {
@@ -149,7 +149,7 @@
     "short": false
   },
   "TAOUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "NEARUSDT": {
