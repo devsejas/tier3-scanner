@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 1414,
+  "_cycle_count": 1415,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -9,7 +9,7 @@
     "short": false
   },
   "SOLUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "DOGEUSDT": {
@@ -85,7 +85,7 @@
     "short": true
   },
   "ENAUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "GMTUSDT": {
@@ -114,7 +114,7 @@
   },
   "PORTALUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "TRXUSDT": {
     "long": false,
