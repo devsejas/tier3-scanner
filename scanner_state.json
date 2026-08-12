@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 1450,
+  "_cycle_count": 1451,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -170,10 +170,10 @@
   },
   "TRACUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "CGPTUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "AIOZUSDT": {
