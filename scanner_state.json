@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 1894,
+  "_cycle_count": 1895,
   "BTCUSDT": {
     "long": false,
     "short": true
@@ -14,7 +14,7 @@
   },
   "DOGEUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "WLDUSDT": {
     "long": false,
@@ -106,7 +106,7 @@
   },
   "ILVUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "HBARUSDT": {
     "long": false,
