@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 1890,
+  "_cycle_count": 1891,
   "BTCUSDT": {
     "long": false,
     "short": true
@@ -106,7 +106,7 @@
   },
   "ILVUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "HBARUSDT": {
     "long": false,
