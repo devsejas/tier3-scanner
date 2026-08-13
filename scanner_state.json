@@ -1,8 +1,8 @@
 {
-  "_cycle_count": 1844,
+  "_cycle_count": 1845,
   "BTCUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "ETHUSDT": {
     "long": false,
@@ -26,7 +26,7 @@
   },
   "PEPEUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "LINKUSDT": {
     "long": false,
@@ -50,7 +50,7 @@
   },
   "FILUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "JTOUSDT": {
     "long": false,
