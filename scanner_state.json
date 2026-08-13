@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 1753,
+  "_cycle_count": 1754,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -26,7 +26,7 @@
   },
   "PEPEUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "LINKUSDT": {
     "long": false,
@@ -129,7 +129,7 @@
     "short": false
   },
   "SUNUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "RUNEUSDT": {
