@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 2113,
+  "_cycle_count": 2114,
   "BTCUSDT": {
     "long": false,
     "short": true
@@ -70,7 +70,7 @@
   },
   "BTTUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "FLOWUSDT": {
     "long": false,
