@@ -1,8 +1,8 @@
 {
-  "_cycle_count": 2138,
+  "_cycle_count": 2139,
   "BTCUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "ETHUSDT": {
     "long": false,
@@ -54,7 +54,7 @@
   },
   "JTOUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "SEIUSDT": {
     "long": false,
@@ -78,7 +78,7 @@
   },
   "SPELLUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "REEFUSDT": {
     "long": false,
@@ -114,7 +114,7 @@
   },
   "PORTALUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "TRXUSDT": {
     "long": false,
@@ -134,7 +134,7 @@
   },
   "RUNEUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "PYTHUSDT": {
     "long": false,
