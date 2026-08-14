@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 2233,
+  "_cycle_count": 2234,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -38,7 +38,7 @@
   },
   "FETUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "NILUSDT": {
     "long": false,
