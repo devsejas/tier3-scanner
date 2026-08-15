@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 2441,
+  "_cycle_count": 2442,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -41,7 +41,7 @@
     "short": false
   },
   "NILUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "RIFUSDT": {
@@ -170,7 +170,7 @@
   },
   "TRACUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "CGPTUSDT": {
     "long": false,
