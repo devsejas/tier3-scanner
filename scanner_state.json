@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 2911,
+  "_cycle_count": 2912,
   "BTCUSDT": {
     "long": false,
     "short": true
@@ -157,7 +157,7 @@
     "short": false
   },
   "RLCUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "ICPUSDT": {
