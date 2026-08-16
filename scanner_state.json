@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 2796,
+  "_cycle_count": 2797,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -38,7 +38,7 @@
   },
   "FETUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "NILUSDT": {
     "long": false,
@@ -113,7 +113,7 @@
     "short": false
   },
   "PORTALUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "TRXUSDT": {
@@ -181,7 +181,7 @@
     "short": false
   },
   "DODOUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "PENGUUSDT": {
