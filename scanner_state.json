@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 2890,
+  "_cycle_count": 2891,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -26,7 +26,7 @@
   },
   "PEPEUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "LINKUSDT": {
     "long": false,
@@ -113,7 +113,7 @@
     "short": false
   },
   "PORTALUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "TRXUSDT": {
@@ -157,7 +157,7 @@
     "short": false
   },
   "RLCUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "ICPUSDT": {
@@ -178,10 +178,10 @@
   },
   "AIOZUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "DODOUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "PENGUUSDT": {
