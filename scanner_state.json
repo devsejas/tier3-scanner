@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 3076,
+  "_cycle_count": 3077,
   "BTCUSDT": {
     "long": true,
     "short": false
@@ -125,7 +125,7 @@
     "short": true
   },
   "CAKEUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "SUNUSDT": {
