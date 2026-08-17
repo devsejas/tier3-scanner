@@ -1,7 +1,7 @@
 {
-  "_cycle_count": 3071,
+  "_cycle_count": 3072,
   "BTCUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "ETHUSDT": {
@@ -29,7 +29,7 @@
     "short": false
   },
   "LINKUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "ONDOUSDT": {
@@ -74,7 +74,7 @@
   },
   "FLOWUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "SPELLUSDT": {
     "long": false,
