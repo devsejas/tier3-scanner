@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 3218,
+  "_cycle_count": 3219,
   "BTCUSDT": {
     "long": true,
     "short": false
@@ -130,7 +130,7 @@
   },
   "SUNUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "RUNEUSDT": {
     "long": false,
