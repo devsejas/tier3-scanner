@@ -1,15 +1,15 @@
 {
-  "_cycle_count": 3135,
+  "_cycle_count": 3136,
   "BTCUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "ETHUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "SOLUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "DOGEUSDT": {
@@ -125,12 +125,12 @@
     "short": false
   },
   "CAKEUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "SUNUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "RUNEUSDT": {
     "long": false,
@@ -178,7 +178,7 @@
   },
   "AIOZUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "DODOUSDT": {
     "long": false,
