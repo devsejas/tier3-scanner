@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 3510,
+  "_cycle_count": 3511,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -86,7 +86,7 @@
   },
   "ENAUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "GMTUSDT": {
     "long": false,
