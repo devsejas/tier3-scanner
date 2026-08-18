@@ -1,15 +1,15 @@
 {
-  "_cycle_count": 3468,
+  "_cycle_count": 3469,
   "BTCUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "ETHUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "SOLUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "DOGEUSDT": {
@@ -22,7 +22,7 @@
   },
   "JASMYUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "PEPEUSDT": {
     "long": false,
@@ -38,7 +38,7 @@
   },
   "FETUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "NILUSDT": {
     "long": false,
@@ -61,7 +61,7 @@
     "short": false
   },
   "LITUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "LINEAUSDT": {
@@ -82,7 +82,7 @@
   },
   "REEFUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "ENAUSDT": {
     "long": false,
@@ -117,7 +117,7 @@
     "short": false
   },
   "TRXUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "QNTUSDT": {
@@ -125,16 +125,16 @@
     "short": false
   },
   "CAKEUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "SUNUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "RUNEUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "PYTHUSDT": {
     "long": false,
@@ -154,7 +154,7 @@
   },
   "NEARUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "RLCUSDT": {
     "long": false,
@@ -198,6 +198,6 @@
   },
   "JCTUSDT": {
     "long": false,
-    "short": false
+    "short": true
   }
 }
