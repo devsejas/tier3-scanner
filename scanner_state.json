@@ -1,7 +1,7 @@
 {
-  "_cycle_count": 3338,
+  "_cycle_count": 3339,
   "BTCUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "ETHUSDT": {
@@ -9,12 +9,12 @@
     "short": false
   },
   "SOLUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "DOGEUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "WLDUSDT": {
     "long": false,
@@ -26,7 +26,7 @@
   },
   "PEPEUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "LINKUSDT": {
     "long": false,
@@ -38,7 +38,7 @@
   },
   "FETUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "NILUSDT": {
     "long": false,
@@ -50,15 +50,15 @@
   },
   "FILUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "JTOUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "SEIUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "LITUSDT": {
     "long": false,
@@ -78,7 +78,7 @@
   },
   "SPELLUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "REEFUSDT": {
     "long": false,
@@ -86,7 +86,7 @@
   },
   "ENAUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "GMTUSDT": {
     "long": false,
@@ -117,7 +117,7 @@
     "short": false
   },
   "TRXUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "QNTUSDT": {
@@ -134,11 +134,11 @@
   },
   "RUNEUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "PYTHUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "CROUSDT": {
     "long": false,
@@ -166,7 +166,7 @@
   },
   "INITUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "TRACUSDT": {
     "long": false,
@@ -174,7 +174,7 @@
   },
   "CGPTUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "AIOZUSDT": {
     "long": false,
@@ -186,7 +186,7 @@
   },
   "PENGUUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "AAVEUSDT": {
     "long": false,
