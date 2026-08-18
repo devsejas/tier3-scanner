@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 3260,
+  "_cycle_count": 3261,
   "BTCUSDT": {
     "long": true,
     "short": false
@@ -90,7 +90,7 @@
   },
   "GMTUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "BIOUSDT": {
     "long": false,
