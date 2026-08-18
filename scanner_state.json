@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 3347,
+  "_cycle_count": 3348,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -90,7 +90,7 @@
   },
   "GMTUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "BIOUSDT": {
     "long": false,
@@ -138,7 +138,7 @@
   },
   "PYTHUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "CROUSDT": {
     "long": false,
@@ -178,10 +178,10 @@
   },
   "AIOZUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "DODOUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "PENGUUSDT": {
