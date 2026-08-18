@@ -1,11 +1,11 @@
 {
-  "_cycle_count": 3463,
+  "_cycle_count": 3464,
   "BTCUSDT": {
     "long": true,
     "short": false
   },
   "ETHUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "SOLUSDT": {
