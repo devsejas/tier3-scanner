@@ -1,15 +1,15 @@
 {
-  "_cycle_count": 3442,
+  "_cycle_count": 3443,
   "BTCUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "ETHUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "SOLUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "DOGEUSDT": {
@@ -22,7 +22,7 @@
   },
   "JASMYUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "PEPEUSDT": {
     "long": false,
@@ -38,7 +38,7 @@
   },
   "FETUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "NILUSDT": {
     "long": false,
@@ -82,7 +82,7 @@
   },
   "REEFUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "ENAUSDT": {
     "long": false,
@@ -125,12 +125,12 @@
     "short": false
   },
   "CAKEUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "SUNUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "RUNEUSDT": {
     "long": false,
@@ -150,7 +150,7 @@
   },
   "TAOUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "NEARUSDT": {
     "long": false,
