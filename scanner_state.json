@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 3281,
+  "_cycle_count": 3282,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -90,7 +90,7 @@
   },
   "GMTUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "BIOUSDT": {
     "long": false,
@@ -142,7 +142,7 @@
   },
   "CROUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "VETUSDT": {
     "long": false,
@@ -186,7 +186,7 @@
   },
   "PENGUUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "AAVEUSDT": {
     "long": false,
