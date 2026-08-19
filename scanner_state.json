@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 3745,
+  "_cycle_count": 3746,
   "BTCUSDT": {
     "long": true,
     "short": false
@@ -145,7 +145,7 @@
     "short": false
   },
   "VETUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "TAOUSDT": {
