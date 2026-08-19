@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 3604,
+  "_cycle_count": 3605,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -150,7 +150,7 @@
   },
   "TAOUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "NEARUSDT": {
     "long": false,
