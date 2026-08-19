@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 3757,
+  "_cycle_count": 3758,
   "BTCUSDT": {
     "long": true,
     "short": false
@@ -165,7 +165,7 @@
     "short": false
   },
   "INITUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "TRACUSDT": {
