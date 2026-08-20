@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 3943,
+  "_cycle_count": 3944,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -97,7 +97,7 @@
     "short": false
   },
   "OKBUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "KSMUSDT": {
