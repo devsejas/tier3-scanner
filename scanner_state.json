@@ -1,19 +1,19 @@
 {
-  "_cycle_count": 3861,
+  "_cycle_count": 3862,
   "BTCUSDT": {
     "long": false,
     "short": false
   },
   "ETHUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "SOLUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "DOGEUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "WLDUSDT": {
@@ -25,7 +25,7 @@
     "short": false
   },
   "PEPEUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "LINKUSDT": {
@@ -53,7 +53,7 @@
     "short": false
   },
   "JTOUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "SEIUSDT": {
@@ -73,7 +73,7 @@
     "short": false
   },
   "FLOWUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "SPELLUSDT": {
@@ -85,7 +85,7 @@
     "short": false
   },
   "ENAUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "GMTUSDT": {
@@ -97,7 +97,7 @@
     "short": false
   },
   "OKBUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "KSMUSDT": {
@@ -105,11 +105,11 @@
     "short": false
   },
   "ILVUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "HBARUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "PORTALUSDT": {
@@ -133,11 +133,11 @@
     "short": false
   },
   "RUNEUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "PYTHUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "CROUSDT": {
@@ -193,7 +193,7 @@
     "short": false
   },
   "PENDLEUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "JCTUSDT": {
