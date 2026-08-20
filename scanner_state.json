@@ -61,7 +61,7 @@
     "short": false
   },
   "LITUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "LINEAUSDT": {
@@ -117,7 +117,7 @@
     "short": false
   },
   "TRXUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "QNTUSDT": {
@@ -133,7 +133,7 @@
     "short": false
   },
   "RUNEUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "PYTHUSDT": {
@@ -189,7 +189,7 @@
     "short": false
   },
   "AAVEUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "PENDLEUSDT": {
