@@ -89,7 +89,7 @@
     "short": false
   },
   "GMTUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "BIOUSDT": {
