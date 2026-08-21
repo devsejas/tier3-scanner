@@ -1,23 +1,23 @@
 {
-  "_cycle_count": 4286,
+  "_cycle_count": 4287,
   "BTCUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "ETHUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "SOLUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "DOGEUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "WLDUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "JASMYUSDT": {
@@ -29,7 +29,7 @@
     "short": false
   },
   "LINKUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "ONDOUSDT": {
@@ -41,7 +41,7 @@
     "short": false
   },
   "NILUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "RIFUSDT": {
@@ -53,15 +53,15 @@
     "short": false
   },
   "JTOUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "SEIUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "LITUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "LINEAUSDT": {
@@ -85,7 +85,7 @@
     "short": false
   },
   "ENAUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "GMTUSDT": {
@@ -105,11 +105,11 @@
     "short": false
   },
   "ILVUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "HBARUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "PORTALUSDT": {
@@ -121,7 +121,7 @@
     "short": false
   },
   "QNTUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "CAKEUSDT": {
@@ -137,15 +137,15 @@
     "short": false
   },
   "PYTHUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "CROUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "VETUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "TAOUSDT": {
@@ -173,7 +173,7 @@
     "short": false
   },
   "CGPTUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "AIOZUSDT": {
