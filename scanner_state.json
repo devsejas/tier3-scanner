@@ -77,7 +77,7 @@
     "short": false
   },
   "SPELLUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "REEFUSDT": {
@@ -185,7 +185,7 @@
     "short": false
   },
   "PENGUUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "AAVEUSDT": {
