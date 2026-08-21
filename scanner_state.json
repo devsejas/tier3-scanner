@@ -1,7 +1,7 @@
 {
-  "_cycle_count": 4207,
+  "_cycle_count": 4208,
   "BTCUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "ETHUSDT": {
@@ -9,7 +9,7 @@
     "short": false
   },
   "SOLUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "DOGEUSDT": {
@@ -17,7 +17,7 @@
     "short": false
   },
   "WLDUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "JASMYUSDT": {
@@ -29,11 +29,11 @@
     "short": false
   },
   "LINKUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "ONDOUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "FETUSDT": {
@@ -41,7 +41,7 @@
     "short": false
   },
   "NILUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "RIFUSDT": {
@@ -49,7 +49,7 @@
     "short": false
   },
   "FILUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "JTOUSDT": {
@@ -85,7 +85,7 @@
     "short": false
   },
   "ENAUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "GMTUSDT": {
@@ -97,11 +97,11 @@
     "short": false
   },
   "OKBUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "KSMUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "ILVUSDT": {
@@ -125,7 +125,7 @@
     "short": false
   },
   "CAKEUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "SUNUSDT": {
@@ -133,11 +133,11 @@
     "short": false
   },
   "RUNEUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "PYTHUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "CROUSDT": {
@@ -149,7 +149,7 @@
     "short": false
   },
   "TAOUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "NEARUSDT": {
@@ -157,11 +157,11 @@
     "short": false
   },
   "RLCUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "ICPUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "INITUSDT": {
@@ -189,7 +189,7 @@
     "short": false
   },
   "AAVEUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "PENDLEUSDT": {
