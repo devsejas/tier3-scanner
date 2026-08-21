@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 4317,
+  "_cycle_count": 4318,
   "BTCUSDT": {
     "long": true,
     "short": false
@@ -73,7 +73,7 @@
     "short": false
   },
   "FLOWUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "SPELLUSDT": {
@@ -89,7 +89,7 @@
     "short": false
   },
   "GMTUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "BIOUSDT": {
@@ -121,7 +121,7 @@
     "short": false
   },
   "QNTUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "CAKEUSDT": {
