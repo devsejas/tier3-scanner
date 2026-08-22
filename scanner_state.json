@@ -17,7 +17,7 @@
     "short": false
   },
   "WLDUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "JASMYUSDT": {
@@ -149,7 +149,7 @@
     "short": false
   },
   "TAOUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "NEARUSDT": {
