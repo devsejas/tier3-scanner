@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 4534,
+  "_cycle_count": 4535,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -101,7 +101,7 @@
     "short": false
   },
   "KSMUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "ILVUSDT": {
@@ -149,7 +149,7 @@
     "short": false
   },
   "TAOUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "NEARUSDT": {
@@ -185,7 +185,7 @@
     "short": false
   },
   "PENGUUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "AAVEUSDT": {
