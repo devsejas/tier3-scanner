@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 4967,
+  "_cycle_count": 4968,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -9,7 +9,7 @@
     "short": false
   },
   "SOLUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "DOGEUSDT": {
@@ -21,7 +21,7 @@
     "short": false
   },
   "JASMYUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "PEPEUSDT": {
@@ -29,7 +29,7 @@
     "short": false
   },
   "LINKUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "ONDOUSDT": {
@@ -89,7 +89,7 @@
     "short": false
   },
   "GMTUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "BIOUSDT": {
@@ -130,18 +130,18 @@
   },
   "SUNUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "RUNEUSDT": {
     "long": false,
     "short": false
   },
   "PYTHUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "CROUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "VETUSDT": {
@@ -177,7 +177,7 @@
     "short": false
   },
   "AIOZUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "DODOUSDT": {
@@ -185,7 +185,7 @@
     "short": false
   },
   "PENGUUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "AAVEUSDT": {
