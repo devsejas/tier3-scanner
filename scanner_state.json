@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 4953,
+  "_cycle_count": 4954,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -46,7 +46,7 @@
   },
   "RIFUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "FILUSDT": {
     "long": false,
@@ -61,7 +61,7 @@
     "short": false
   },
   "LITUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "LINEAUSDT": {
@@ -97,7 +97,7 @@
     "short": false
   },
   "OKBUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "KSMUSDT": {
@@ -121,7 +121,7 @@
     "short": false
   },
   "QNTUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "CAKEUSDT": {
