@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 5334,
+  "_cycle_count": 5335,
   "BTCUSDT": {
     "long": true,
     "short": false
@@ -9,7 +9,7 @@
     "short": false
   },
   "SOLUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "DOGEUSDT": {
@@ -17,7 +17,7 @@
     "short": false
   },
   "WLDUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "JASMYUSDT": {
@@ -65,7 +65,7 @@
     "short": false
   },
   "LINEAUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "BTTUSDT": {
@@ -113,7 +113,7 @@
     "short": false
   },
   "PORTALUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "TRXUSDT": {
@@ -149,7 +149,7 @@
     "short": false
   },
   "TAOUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "NEARUSDT": {
@@ -166,7 +166,7 @@
   },
   "INITUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "TRACUSDT": {
     "long": false,
