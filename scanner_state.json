@@ -1,15 +1,15 @@
 {
-  "_cycle_count": 5315,
+  "_cycle_count": 5316,
   "BTCUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "ETHUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "SOLUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "DOGEUSDT": {
@@ -25,19 +25,19 @@
     "short": false
   },
   "PEPEUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "LINKUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "ONDOUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "FETUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "NILUSDT": {
@@ -89,7 +89,7 @@
     "short": false
   },
   "GMTUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "BIOUSDT": {
@@ -97,7 +97,7 @@
     "short": false
   },
   "OKBUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "KSMUSDT": {
@@ -157,11 +157,11 @@
     "short": false
   },
   "RLCUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "ICPUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "INITUSDT": {
