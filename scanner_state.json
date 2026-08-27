@@ -1,7 +1,7 @@
 {
-  "_cycle_count": 6145,
+  "_cycle_count": 6146,
   "BTCUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "ETHUSDT": {
@@ -29,7 +29,7 @@
     "short": false
   },
   "LINKUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "ONDOUSDT": {
@@ -65,7 +65,7 @@
     "short": false
   },
   "LINEAUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "BTTUSDT": {
@@ -85,7 +85,7 @@
     "short": false
   },
   "ENAUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "GMTUSDT": {
@@ -153,7 +153,7 @@
     "short": false
   },
   "NEARUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "RLCUSDT": {
