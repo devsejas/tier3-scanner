@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 6021,
+  "_cycle_count": 6022,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -17,11 +17,11 @@
     "short": false
   },
   "WLDUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "JASMYUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "PEPEUSDT": {
