@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 6079,
+  "_cycle_count": 6080,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -9,7 +9,7 @@
     "short": false
   },
   "SOLUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "DOGEUSDT": {
@@ -21,7 +21,7 @@
     "short": false
   },
   "JASMYUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "PEPEUSDT": {
@@ -101,7 +101,7 @@
     "short": false
   },
   "KSMUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "ILVUSDT": {
@@ -145,7 +145,7 @@
     "short": false
   },
   "VETUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "TAOUSDT": {
@@ -177,7 +177,7 @@
     "short": false
   },
   "AIOZUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "DODOUSDT": {
