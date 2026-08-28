@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 6525,
+  "_cycle_count": 6526,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -34,7 +34,7 @@
   },
   "ONDOUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "FETUSDT": {
     "long": false,
@@ -166,7 +166,7 @@
   },
   "INITUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "TRACUSDT": {
     "long": false,
@@ -198,6 +198,6 @@
   },
   "JCTUSDT": {
     "long": false,
-    "short": false
+    "short": true
   }
 }
