@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 6535,
+  "_cycle_count": 6536,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -18,7 +18,7 @@
   },
   "WLDUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "JASMYUSDT": {
     "long": false,
@@ -34,14 +34,14 @@
   },
   "ONDOUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "FETUSDT": {
     "long": false,
     "short": true
   },
   "NILUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "RIFUSDT": {
@@ -50,7 +50,7 @@
   },
   "FILUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "JTOUSDT": {
     "long": false,
@@ -78,7 +78,7 @@
   },
   "SPELLUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "REEFUSDT": {
     "long": false,
@@ -166,7 +166,7 @@
   },
   "INITUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "TRACUSDT": {
     "long": false,
@@ -174,7 +174,7 @@
   },
   "CGPTUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "AIOZUSDT": {
     "long": false,
