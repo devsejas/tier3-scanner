@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 6804,
+  "_cycle_count": 6805,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -82,7 +82,7 @@
   },
   "REEFUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "ENAUSDT": {
     "long": false,
@@ -161,11 +161,11 @@
     "short": false
   },
   "ICPUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "INITUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "TRACUSDT": {
