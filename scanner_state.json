@@ -1,11 +1,11 @@
 {
-  "_cycle_count": 7092,
+  "_cycle_count": 7093,
   "BTCUSDT": {
     "long": false,
     "short": false
   },
   "ETHUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "SOLUSDT": {
@@ -125,7 +125,7 @@
     "short": false
   },
   "CAKEUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "SUNUSDT": {
@@ -189,11 +189,11 @@
     "short": false
   },
   "AAVEUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "PENDLEUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "JCTUSDT": {
