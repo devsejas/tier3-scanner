@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 7378,
+  "_cycle_count": 7379,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -21,7 +21,7 @@
     "short": true
   },
   "JASMYUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "PEPEUSDT": {
@@ -81,8 +81,8 @@
     "short": false
   },
   "REEFUSDT": {
-    "long": false,
-    "short": true
+    "long": true,
+    "short": false
   },
   "ENAUSDT": {
     "long": false,
