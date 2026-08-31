@@ -1,7 +1,7 @@
 {
-  "_cycle_count": 7383,
+  "_cycle_count": 7384,
   "BTCUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "ETHUSDT": {
@@ -21,7 +21,7 @@
     "short": false
   },
   "JASMYUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "PEPEUSDT": {
