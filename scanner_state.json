@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 7691,
+  "_cycle_count": 7692,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -34,7 +34,7 @@
   },
   "ONDOUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "FETUSDT": {
     "long": false,
@@ -49,7 +49,7 @@
     "short": false
   },
   "FILUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "JTOUSDT": {
@@ -85,7 +85,7 @@
     "short": false
   },
   "ENAUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "GMTUSDT": {
