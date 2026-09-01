@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 7537,
+  "_cycle_count": 7538,
   "BTCUSDT": {
     "long": true,
     "short": false
@@ -118,7 +118,7 @@
   },
   "TRXUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "QNTUSDT": {
     "long": false,
