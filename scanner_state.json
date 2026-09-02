@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 7908,
+  "_cycle_count": 7909,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -78,10 +78,10 @@
   },
   "SPELLUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "REEFUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "ENAUSDT": {
@@ -94,7 +94,7 @@
   },
   "BIOUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "OKBUSDT": {
     "long": false,
@@ -106,7 +106,7 @@
   },
   "ILVUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "HBARUSDT": {
     "long": false,
@@ -165,7 +165,7 @@
     "short": false
   },
   "INITUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "TRACUSDT": {
