@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 7762,
+  "_cycle_count": 7763,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -189,7 +189,7 @@
     "short": false
   },
   "AAVEUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "PENDLEUSDT": {
