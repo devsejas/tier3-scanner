@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 7875,
+  "_cycle_count": 7876,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -182,7 +182,7 @@
   },
   "DODOUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "PENGUUSDT": {
     "long": false,
