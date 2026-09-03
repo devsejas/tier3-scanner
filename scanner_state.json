@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 8040,
+  "_cycle_count": 8041,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -57,15 +57,15 @@
     "short": false
   },
   "SEIUSDT": {
-    "long": false,
-    "short": false
-  },
-  "LITUSDT": {
     "long": true,
     "short": false
   },
-  "LINEAUSDT": {
+  "LITUSDT": {
     "long": false,
+    "short": false
+  },
+  "LINEAUSDT": {
+    "long": true,
     "short": false
   },
   "BTTUSDT": {
@@ -106,7 +106,7 @@
   },
   "ILVUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "HBARUSDT": {
     "long": false,
@@ -174,7 +174,7 @@
   },
   "CGPTUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "AIOZUSDT": {
     "long": false,
