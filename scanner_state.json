@@ -1,7 +1,7 @@
 {
-  "_cycle_count": 8310,
+  "_cycle_count": 8311,
   "BTCUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "ETHUSDT": {
@@ -9,7 +9,7 @@
     "short": false
   },
   "SOLUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "DOGEUSDT": {
@@ -65,7 +65,7 @@
     "short": false
   },
   "LINEAUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "BTTUSDT": {
@@ -97,7 +97,7 @@
     "short": false
   },
   "OKBUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "KSMUSDT": {
@@ -161,7 +161,7 @@
     "short": false
   },
   "ICPUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "INITUSDT": {
@@ -189,7 +189,7 @@
     "short": false
   },
   "AAVEUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "PENDLEUSDT": {
