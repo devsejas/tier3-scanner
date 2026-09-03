@@ -1,11 +1,11 @@
 {
-  "_cycle_count": 8285,
+  "_cycle_count": 8286,
   "BTCUSDT": {
     "long": true,
     "short": false
   },
   "ETHUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "SOLUSDT": {
@@ -85,7 +85,7 @@
     "short": true
   },
   "ENAUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "GMTUSDT": {
@@ -113,7 +113,7 @@
     "short": false
   },
   "PORTALUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "TRXUSDT": {
@@ -141,7 +141,7 @@
     "short": false
   },
   "CROUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "VETUSDT": {
@@ -149,7 +149,7 @@
     "short": false
   },
   "TAOUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "NEARUSDT": {
@@ -157,7 +157,7 @@
     "short": false
   },
   "RLCUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "ICPUSDT": {
