@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 8300,
+  "_cycle_count": 8301,
   "BTCUSDT": {
     "long": true,
     "short": false
@@ -82,10 +82,10 @@
   },
   "REEFUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "ENAUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "GMTUSDT": {
@@ -141,7 +141,7 @@
     "short": false
   },
   "CROUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "VETUSDT": {
@@ -185,15 +185,15 @@
     "short": false
   },
   "PENGUUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "AAVEUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "PENDLEUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "JCTUSDT": {
