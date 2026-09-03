@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 8180,
+  "_cycle_count": 8181,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -13,7 +13,7 @@
     "short": false
   },
   "DOGEUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "WLDUSDT": {
@@ -33,7 +33,7 @@
     "short": false
   },
   "ONDOUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "FETUSDT": {
@@ -109,7 +109,7 @@
     "short": false
   },
   "HBARUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "PORTALUSDT": {
@@ -141,7 +141,7 @@
     "short": false
   },
   "CROUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "VETUSDT": {
