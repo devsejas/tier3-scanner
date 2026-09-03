@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 8283,
+  "_cycle_count": 8284,
   "BTCUSDT": {
     "long": true,
     "short": false
@@ -13,7 +13,7 @@
     "short": false
   },
   "DOGEUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "WLDUSDT": {
@@ -21,7 +21,7 @@
     "short": false
   },
   "JASMYUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "PEPEUSDT": {
@@ -65,7 +65,7 @@
     "short": false
   },
   "LINEAUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "BTTUSDT": {
@@ -77,15 +77,15 @@
     "short": false
   },
   "SPELLUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "REEFUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "ENAUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "GMTUSDT": {
@@ -97,11 +97,11 @@
     "short": false
   },
   "OKBUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "KSMUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "ILVUSDT": {
@@ -133,7 +133,7 @@
     "short": false
   },
   "RUNEUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "PYTHUSDT": {
@@ -141,7 +141,7 @@
     "short": false
   },
   "CROUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "VETUSDT": {
@@ -149,11 +149,11 @@
     "short": false
   },
   "TAOUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "NEARUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "RLCUSDT": {
@@ -161,15 +161,15 @@
     "short": false
   },
   "ICPUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "INITUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "TRACUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "CGPTUSDT": {
@@ -189,11 +189,11 @@
     "short": false
   },
   "AAVEUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "PENDLEUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "JCTUSDT": {
