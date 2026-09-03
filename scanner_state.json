@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 8242,
+  "_cycle_count": 8243,
   "BTCUSDT": {
     "long": true,
     "short": false
@@ -45,7 +45,7 @@
     "short": false
   },
   "RIFUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "FILUSDT": {
@@ -89,7 +89,7 @@
     "short": false
   },
   "GMTUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "BIOUSDT": {
@@ -113,11 +113,11 @@
     "short": false
   },
   "PORTALUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "TRXUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "QNTUSDT": {
@@ -133,7 +133,7 @@
     "short": false
   },
   "RUNEUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "PYTHUSDT": {
@@ -177,7 +177,7 @@
     "short": false
   },
   "AIOZUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "DODOUSDT": {
