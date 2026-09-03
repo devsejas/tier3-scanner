@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 8175,
+  "_cycle_count": 8176,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -13,7 +13,7 @@
     "short": false
   },
   "DOGEUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "WLDUSDT": {
@@ -125,7 +125,7 @@
     "short": false
   },
   "CAKEUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "SUNUSDT": {
@@ -141,7 +141,7 @@
     "short": false
   },
   "CROUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "VETUSDT": {
