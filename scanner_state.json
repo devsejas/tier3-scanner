@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 8648,
+  "_cycle_count": 8649,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -177,7 +177,7 @@
     "short": false
   },
   "AIOZUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "DODOUSDT": {
