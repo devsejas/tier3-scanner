@@ -1,7 +1,7 @@
 {
-  "_cycle_count": 8904,
+  "_cycle_count": 8905,
   "BTCUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "ETHUSDT": {
@@ -25,7 +25,7 @@
     "short": false
   },
   "PEPEUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "LINKUSDT": {
@@ -62,7 +62,7 @@
   },
   "LITUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "LINEAUSDT": {
     "long": false,
@@ -118,7 +118,7 @@
   },
   "TRXUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "QNTUSDT": {
     "long": false,
@@ -141,7 +141,7 @@
     "short": false
   },
   "CROUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "VETUSDT": {
@@ -189,7 +189,7 @@
     "short": false
   },
   "AAVEUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "PENDLEUSDT": {
