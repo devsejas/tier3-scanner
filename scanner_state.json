@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 8914,
+  "_cycle_count": 8915,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -73,7 +73,7 @@
     "short": false
   },
   "FLOWUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "SPELLUSDT": {
@@ -101,7 +101,7 @@
     "short": false
   },
   "KSMUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "ILVUSDT": {
@@ -177,11 +177,11 @@
     "short": false
   },
   "AIOZUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "DODOUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "PENGUUSDT": {
