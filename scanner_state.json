@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 8934,
+  "_cycle_count": 8935,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -45,7 +45,7 @@
     "short": false
   },
   "RIFUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "FILUSDT": {
@@ -153,7 +153,7 @@
     "short": false
   },
   "NEARUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "RLCUSDT": {
@@ -177,7 +177,7 @@
     "short": false
   },
   "AIOZUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "DODOUSDT": {
