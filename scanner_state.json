@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 8935,
+  "_cycle_count": 8936,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -45,7 +45,7 @@
     "short": false
   },
   "RIFUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "FILUSDT": {
@@ -53,7 +53,7 @@
     "short": false
   },
   "JTOUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "SEIUSDT": {
