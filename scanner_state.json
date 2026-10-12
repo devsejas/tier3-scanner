@@ -1,20 +1,20 @@
 {
-  "_cycle_count": 8956,
+  "_cycle_count": 8957,
   "BTCUSDT": {
     "long": false,
     "short": false
   },
   "ETHUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "SOLUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "DOGEUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "WLDUSDT": {
     "long": false,
@@ -62,7 +62,7 @@
   },
   "LITUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "LINEAUSDT": {
     "long": false,
@@ -82,7 +82,7 @@
   },
   "REEFUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "ENAUSDT": {
     "long": false,
@@ -94,7 +94,7 @@
   },
   "BIOUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "OKBUSDT": {
     "long": false,
@@ -110,11 +110,11 @@
   },
   "HBARUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "PORTALUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "TRXUSDT": {
     "long": false,
@@ -130,7 +130,7 @@
   },
   "SUNUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "RUNEUSDT": {
     "long": false,
@@ -142,11 +142,11 @@
   },
   "CROUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "VETUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "TAOUSDT": {
     "long": false,
