@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 9031,
+  "_cycle_count": 9032,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -41,7 +41,7 @@
     "short": false
   },
   "NILUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "RIFUSDT": {
@@ -106,7 +106,7 @@
   },
   "ILVUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "HBARUSDT": {
     "long": false,
@@ -126,7 +126,7 @@
   },
   "CAKEUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "SUNUSDT": {
     "long": false,
@@ -174,10 +174,10 @@
   },
   "CGPTUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "AIOZUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "DODOUSDT": {
