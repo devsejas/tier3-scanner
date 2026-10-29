@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 9053,
+  "_cycle_count": 9054,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -22,7 +22,7 @@
   },
   "JASMYUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "PEPEUSDT": {
     "long": true,
@@ -62,7 +62,7 @@
   },
   "LITUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "LINEAUSDT": {
     "long": false,
@@ -110,7 +110,7 @@
   },
   "HBARUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "PORTALUSDT": {
     "long": false,
@@ -121,7 +121,7 @@
     "short": false
   },
   "QNTUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "CAKEUSDT": {
@@ -153,12 +153,12 @@
     "short": false
   },
   "NEARUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "RLCUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "ICPUSDT": {
     "long": false,
