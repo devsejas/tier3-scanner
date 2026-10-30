@@ -1,24 +1,24 @@
 {
-  "_cycle_count": 9059,
+  "_cycle_count": 9060,
   "BTCUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "ETHUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "SOLUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "DOGEUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "WLDUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "JASMYUSDT": {
     "long": false,
@@ -30,15 +30,15 @@
   },
   "LINKUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "ONDOUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "FETUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "NILUSDT": {
     "long": false,
@@ -54,7 +54,7 @@
   },
   "JTOUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "SEIUSDT": {
     "long": false,
@@ -86,7 +86,7 @@
   },
   "ENAUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "GMTUSDT": {
     "long": false,
@@ -102,7 +102,7 @@
   },
   "KSMUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "ILVUSDT": {
     "long": false,
@@ -110,14 +110,14 @@
   },
   "HBARUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "PORTALUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "TRXUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "QNTUSDT": {
@@ -126,14 +126,14 @@
   },
   "CAKEUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "SUNUSDT": {
     "long": false,
     "short": false
   },
   "RUNEUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "PYTHUSDT": {
@@ -142,7 +142,7 @@
   },
   "CROUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "VETUSDT": {
     "long": false,
@@ -150,7 +150,7 @@
   },
   "TAOUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "NEARUSDT": {
     "long": false,
@@ -174,11 +174,11 @@
   },
   "CGPTUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "AIOZUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "DODOUSDT": {
     "long": false,
@@ -190,11 +190,11 @@
   },
   "AAVEUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "PENDLEUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "JCTUSDT": {
     "long": false,
