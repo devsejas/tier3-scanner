@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 9071,
+  "_cycle_count": 9072,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -69,12 +69,12 @@
     "short": false
   },
   "BTTUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "FLOWUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "SPELLUSDT": {
     "long": false,
@@ -82,7 +82,7 @@
   },
   "REEFUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "ENAUSDT": {
     "long": false,
@@ -134,7 +134,7 @@
   },
   "RUNEUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "PYTHUSDT": {
     "long": false,
