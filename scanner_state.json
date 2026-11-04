@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 9080,
+  "_cycle_count": 9081,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -10,7 +10,7 @@
   },
   "SOLUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "DOGEUSDT": {
     "long": false,
@@ -34,11 +34,11 @@
   },
   "ONDOUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "FETUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "NILUSDT": {
     "long": false,
@@ -50,7 +50,7 @@
   },
   "FILUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "JTOUSDT": {
     "long": false,
@@ -58,7 +58,7 @@
   },
   "SEIUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "LITUSDT": {
     "long": false,
@@ -69,7 +69,7 @@
     "short": false
   },
   "BTTUSDT": {
-    "long": false,
+    "long": true,
     "short": false
   },
   "FLOWUSDT": {
@@ -102,7 +102,7 @@
   },
   "KSMUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "ILVUSDT": {
     "long": false,
@@ -126,14 +126,14 @@
   },
   "CAKEUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "SUNUSDT": {
     "long": false,
     "short": false
   },
   "RUNEUSDT": {
-    "long": true,
+    "long": false,
     "short": false
   },
   "PYTHUSDT": {
@@ -162,7 +162,7 @@
   },
   "ICPUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "INITUSDT": {
     "long": false,
@@ -194,7 +194,7 @@
   },
   "PENDLEUSDT": {
     "long": false,
-    "short": false
+    "short": true
   },
   "JCTUSDT": {
     "long": false,
