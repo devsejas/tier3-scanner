@@ -1,5 +1,5 @@
 {
-  "_cycle_count": 9135,
+  "_cycle_count": 9136,
   "BTCUSDT": {
     "long": false,
     "short": false
@@ -98,7 +98,7 @@
   },
   "OKBUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "KSMUSDT": {
     "long": false,
@@ -162,7 +162,7 @@
   },
   "ICPUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "INITUSDT": {
     "long": false,
@@ -170,7 +170,7 @@
   },
   "TRACUSDT": {
     "long": false,
-    "short": true
+    "short": false
   },
   "CGPTUSDT": {
     "long": false,
